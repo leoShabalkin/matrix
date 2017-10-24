@@ -7,7 +7,7 @@ module.exports = class MatrixAlgoritm {
     }
 
     spiral() {
-        if (this.matrix.size() === 1) {
+        if (this.matrix.size() < 2) {
             return null;
         }
         let i, k = this.matrix.getEndPosition(), l = this.matrix.getEndPosition();

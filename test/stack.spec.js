@@ -1,6 +1,11 @@
-import {beforeEach, describe, it} from 'mocha';
-import {expect} from 'chai';
-import {Stack} from '../src/stack';
+'use strict';
+
+const expect = require('chai').expect;
+const it = require('mocha').it;
+const beforeEach = require('mocha').beforeEach;
+const describe = require('mocha').describe;
+const assert = require('assert');
+const Stack = require('../src/stack');
 
 
 describe('stack', () => {
@@ -13,11 +18,11 @@ describe('stack', () => {
         });
     });
 
-    it('equals count element', () => {
-        expect(stackSpy.value().length().to.be.a.equals(3));
+    it('equals count element', function () {
+        expect(stackSpy.value().length).to.be.a.equals(3);
     });
 
-    it('revert element to stack', () => {
-        expect(stackSpy.value()).to.be.a.equal([5, 2, 1]);
+    it('revert element to stack', function () {
+        expect(stackSpy.value()).to.be.a.eql([5, 2, 1]);
     });
 });
