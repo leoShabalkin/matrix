@@ -21,7 +21,7 @@
     "pretest": "npm run",
     "test": "npm run mocha",
     "eslint": "eslint src",
-    "mocha": "mocha --watch --require babel-core/register src"
+    "mocha": "mocha --watch --require babel-core/register test"
   },
   "dependencies": {
     "babel-runtime": "~6.26.0"
