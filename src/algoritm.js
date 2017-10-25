@@ -1,8 +1,12 @@
 const Stack = require('./stack');
+const Matrix = require('./matrix');
 
 module.exports = class MatrixAlgoritm {
 
     constructor(matrix) {
+        if (matrix === undefined || !(matrix instanceof Matrix)) {
+            throw new Error('Do not correct element');
+        }
         this.matrix = matrix;
     }
 

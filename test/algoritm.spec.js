@@ -25,4 +25,8 @@ describe('algoritm', () => {
     it('returns correct values in case', function () {
         expect(algoritmSpy.spiral()).to.be.a.eql([5, 4, 7, 8, 9, 6, 3, 2, 1]);
     });
+
+    it('check correct constructor value', function () {
+        expect(() => new MatrixAlgoritm(1)).to.throw('Do not correct element');
+    })
 });

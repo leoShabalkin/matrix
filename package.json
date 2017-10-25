@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/leoShabalkin/matrix",
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "mocha --recursive",
+    "run_task": "node src/index.js"
   },
   "dependencies": {
     "babel-runtime": "~6.26.0"
