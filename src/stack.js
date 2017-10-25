@@ -5,12 +5,12 @@ module.exports = class Stack {
 
     push(item) {
         this.stac.push(item);
-    };
+    }
 
     value() {
-        return this.stac.reduce(function (carrier, element) {
+        return this.stac.reduce((carrier, element) => {
             carrier.unshift(element);
             return carrier;
         }, []);
-    };
+    }
 };
