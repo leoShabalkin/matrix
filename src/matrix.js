@@ -1,6 +1,9 @@
 module.exports = class Matrix {
-    constructor(n) {
-        this.n = n;
+    constructor(size) {
+        if ((undefined === size) || (size === null) || (typeof size !== 'number')) {
+            throw new Error('Not supported size');
+        }
+        this.n = size;
         this.matrix = [];
     }
 

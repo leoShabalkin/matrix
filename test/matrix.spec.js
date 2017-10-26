@@ -25,4 +25,8 @@ describe('matrix', () => {
     it('should return error ouf bound', () => {
         expect(matrixConstantSpy.getElement(10, 10)).to.be.a('null');
     });
+
+    it('correct matrix size', () => {
+        expect(() => new Matrix('matrix')).to.be.an.throw('Not supported size');
+    });
 });
