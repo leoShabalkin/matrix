@@ -55,7 +55,7 @@ module.exports = class Matrix {
     }
 
     getFirstPosition() {
-        return this.n;
+        return this.matrix.length - 1;
     }
 
     static getEndPosition() {
